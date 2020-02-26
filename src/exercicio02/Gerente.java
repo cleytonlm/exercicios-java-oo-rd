@@ -1,7 +1,22 @@
 package exercicio02;
 
-public class Gerente {
+public class Gerente extends  Funcionario{
 
-    // TODO: implemente o código desta classe
+    private double bonusVariavel;
+
+    private double valorvariavel;
+    public Gerente(String nome, double salario) {
+        super(nome, salario);
+    }
+
+    private void setBonusVariavel() {
+        double porcentagem = 10;
+        double valor = 50;
+        double resultado;
+
+        resultado = (valor * porcentagem) / 100;
+        resultado = +13 * getSalario();
+    }
+
 
 }
